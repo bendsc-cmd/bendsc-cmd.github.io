@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben Wei Lim — CTO & AI Architect</title>
+  <meta name="description" content="Ben Wei Lim — Chief Technology Officer, AI Architect, and Robotics Researcher specializing in deep learning, computer vision, and intelligent systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-dot"></span>BWL
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#publications" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link btn-nav">Connect</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot pulse"></span> Available for Strategic Consulting
+      </div>
+      <h1 class="hero-name">Ben Wei Lim</h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title-prefix">Chief Technology Officer</span>
+        <span class="hero-title-divider">·</span>
+        <span class="hero-title-grad" id="typed-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Architecting next-generation AI systems at the intersection of deep learning, robotics, and production-scale deployment. 4+ years turning research into reality.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Years AI Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">AI Systems Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Research Publications</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" id="btn-explore" class="btn btn-primary">View Projects</a>
+        <a href="#contact" id="btn-contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-heading">Engineering AI that <span class="gradient-text">Actually Ships</span></h2>
+          <p>
+            I'm a highly motivated AI Engineer and Technology Leader with a Master's degree in Mechatronics Engineering from a top technical university and 4+ years of hands-on experience in deep learning, computer vision, and AI deployment.
+          </p>
+          <p>
+            My work spans the full stack of machine intelligence — from designing custom neural architectures to deploying low-latency inference engines on edge hardware. I believe in AI that works in the real world: fast, accurate, and robust.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🏆</span>
+              <div>
+                <strong>1st Prize</strong> — National University Scientific Research Competition
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🥈</span>
+              <div>
+                <strong>2nd Prize</strong> — National Scientific Research Competition
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🏅</span>
+              <div>
+                <strong>3rd Prize</strong> — CodeWar Programming Challenge
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🌐</span>
+              <div>
+                <strong>Languages:</strong> English (VSTEP B2) · Japanese (JLPT N3)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-card-wrap reveal">
+          <div class="about-card glass-card">
+            <div class="about-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner">BWL</div>
+            </div>
+            <div class="about-card-info">
+              <h3>Ben Wei Lim</h3>
+              <span class="about-card-role">CTO · AI Architect · Researcher</span>
+            </div>
+            <div class="about-card-tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Robotics AI</span>
+              <span class="tag">Edge Deployment</span>
+              <span class="tag">LLM Engineering</span>
+              <span class="tag">MLOps</span>
+            </div>
+            <div class="about-card-education">
+              <p class="edu-label">Education</p>
+              <p class="edu-item">🎓 M.Eng · Mechatronics Engineering</p>
+              <p class="edu-item">🎓 B.Eng · Mechatronics Engineering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label reveal">Career Path</div>
+      <h2 class="section-heading center reveal">Professional <span class="gradient-text">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal" data-year="2025–Present">
+          <div class="timeline-dot glow"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Chief Technology Officer</h3>
+                <span class="timeline-company">Strike Robot</span>
+              </div>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Leading the strategic development of Agentic AI systems for autonomous industrial robots</li>
+              <li>Architecting pipelines to convert human demonstration video into robot control policies</li>
+              <li>Building and managing a cross-functional AI research team</li>
+              <li>Proposing and executing product commercialization roadmaps</li>
+              <li>Developing downstream AI models for object recognition and robot perception</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="skill-chip">Agentic AI</span>
+              <span class="skill-chip">Robotics</span>
+              <span class="skill-chip">Imitation Learning</span>
+              <span class="skill-chip">Team Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-year="2025–Present">
+          <div class="timeline-dot glow-secondary"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior AI Engineer</h3>
+                <span class="timeline-company">Enterprise Tech Company</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Researching and developing lightweight Automatic Speech Recognition (ASR) models</li>
+              <li>Deploying production ASR pipeline on NVIDIA Jetson Orin edge devices</li>
+              <li>Designing and improving post-processing (Text Inverse Normalization, Punctuation Restoration)</li>
+              <li>Solving out-of-vocabulary challenges in Vietnamese ASR</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="skill-chip">ASR</span>
+              <span class="skill-chip">Edge AI</span>
+              <span class="skill-chip">Jetson Orin</span>
+              <span class="skill-chip">NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-year="2024–Present">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Lead AI Engineer</h3>
+                <span class="timeline-company">Technology Company (Confidential)</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Researched and deployed production-grade Computer Vision systems</li>
+              <li>Optimized model accuracy and inference speed for high-throughput environments</li>
+              <li>Mentored junior engineers through code reviews and research methodology</li>
+              <li>Built and exposed scalable AI APIs with comprehensive unit testing</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="skill-chip">Computer Vision</span>
+              <span class="skill-chip">MLOps</span>
+              <span class="skill-chip">API Engineering</span>
+              <span class="skill-chip">Mentorship</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-year="2022–2024">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>AI Engineer</h3>
+                <span class="timeline-company">AI Research Institute</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built license plate recognition system deployed on national highway infrastructure with ~95% accuracy and &lt;100ms inference</li>
+              <li>Deployed AI models on serving platforms including TorchServe and NVIDIA Triton</li>
+              <li>Participated in large-scale surveillance and vehicle detection system development</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="skill-chip">TensorRT</span>
+              <span class="skill-chip">Triton</span>
+              <span class="skill-chip">DeepStream</span>
+              <span class="skill-chip">Edge AI</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label reveal">Portfolio</div>
+      <h2 class="section-heading center reveal">Key <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card reveal" id="project-faceid">
+          <div class="project-icon">🔐</div>
+          <div class="project-meta">
+            <span class="project-tag">Computer Vision · Biometrics</span>
+          </div>
+          <h3>FaceID Cloud & Mobile (FIDO Certified)</h3>
+          <p>Developed enterprise-grade FaceID system for cloud and mobile. Achieved FIDO certification. Deployed for major banking and fintech clients.</p>
+          <div class="project-achievements">
+            <span class="achievement">✅ FIDO Certified</span>
+            <span class="achievement">🏦 Banking Clients</span>
+          </div>
+          <div class="project-tech">
+            <span>Deep Metric Learning</span><span>Quantization</span><span>Mobile AI</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" id="project-ocr">
+          <div class="project-icon">📄</div>
+          <div class="project-meta">
+            <span class="project-tag">OCR · Document AI</span>
+          </div>
+          <h3>Vietnam OCR (98.4% Accuracy)</h3>
+          <p>Full-stack OCR system for Vietnamese documents achieving 99.3% on printed text and 97.5% on handwriting. Used by banking and enterprise clients.</p>
+          <div class="project-achievements">
+            <span class="achievement">📊 98.4% Overall Accuracy</span>
+            <span class="achievement">🏢 Enterprise Clients</span>
+          </div>
+          <div class="project-tech">
+            <span>Transformers</span><span>Data Analysis</span><span>ClevaL Metrics</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" id="project-asr">
+          <div class="project-icon">🎤</div>
+          <div class="project-meta">
+            <span class="project-tag">Speech AI · Edge Deployment</span>
+          </div>
+          <h3>Vietnamese ASR System (5% WER)</h3>
+          <p>End-to-end automatic speech recognition system for Vietnamese, trained on large-scale pseudo-labeled data and deployed on Jetson Orin for real-time inference.</p>
+          <div class="project-achievements">
+            <span class="achievement">🎯 5% WER on test set</span>
+            <span class="achievement">⚡ Edge Deployment</span>
+          </div>
+          <div class="project-tech">
+            <span>NeMo</span><span>Riva</span><span>TensorRT</span><span>RoPE</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" id="project-kanji">
+          <div class="project-icon">🈶</div>
+          <div class="project-meta">
+            <span class="project-tag">Mobile AI · Edge</span>
+          </div>
+          <h3>Kanji OCR — Mobile (99.37% Acc, ~10ms)</h3>
+          <p>Lightweight Kanji OCR model deployed on iOS and Android with aggressive quantization achieving 99.37% accuracy and ~10ms inference time.</p>
+          <div class="project-achievements">
+            <span class="achievement">⚡ ~10ms inference</span>
+            <span class="achievement">📱 iOS &amp; Android</span>
+          </div>
+          <div class="project-tech">
+            <span>CNN</span><span>Quantization</span><span>Torch Edge</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" id="project-robot">
+          <div class="project-icon">🤖</div>
+          <div class="project-meta">
+            <span class="project-tag">Robotics · Agentic AI</span>
+          </div>
+          <h3>Agentic AI — Humanoid Robot Control</h3>
+          <p>Planning and engineering an Agentic AI system for the G1 Unitree humanoid robot. Includes human-to-robot action conversion from video and full factory integration.</p>
+          <div class="project-achievements">
+            <span class="achievement">🦾 Unitree G1</span>
+            <span class="achievement">🏭 Factory Ready</span>
+          </div>
+          <div class="project-tech">
+            <span>Imitation Learning</span><span>VLM</span><span>RL</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" id="project-llm">
+          <div class="project-icon">🧠</div>
+          <div class="project-meta">
+            <span class="project-tag">Generative AI · LLM</span>
+          </div>
+          <h3>Vietnamese LLM from Scratch</h3>
+          <p>Built an end-to-end Vietnamese LLM pipeline: dataset crawling, custom tokenizer, pre-training with SFT and RLHF alignment, served via vLLM.</p>
+          <div class="project-achievements">
+            <span class="achievement">📚 Custom Tokenizer</span>
+            <span class="achievement">🔄 Full RLHF Pipeline</span>
+          </div>
+          <div class="project-tech">
+            <span>Transformers</span><span>SFT</span><span>RLHF</span><span>vLLM</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" id="project-kie">
+          <div class="project-icon">📋</div>
+          <div class="project-meta">
+            <span class="project-tag">Document AI · NLP</span>
+          </div>
+          <h3>Key Information Extraction (97.6% Acc)</h3>
+          <p>AI system for extracting structured data from insurance documents, invoices, and forms. Customized LayoutLMv3 served via Triton inference server.</p>
+          <div class="project-achievements">
+            <span class="achievement">📊 97.6% Accuracy</span>
+            <span class="achievement">🏢 Insurance &amp; Finance</span>
+          </div>
+          <div class="project-tech">
+            <span>LayoutLMv3</span><span>Transformers</span><span>Triton</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" id="project-drawing">
+          <div class="project-icon">⚙️</div>
+          <div class="project-meta">
+            <span class="project-tag">Industrial AI · Search</span>
+          </div>
+          <h3>Mechanical Drawing Search (99.34% Acc)</h3>
+          <p>AI-powered visual search system for mechanical drawings using image embeddings and the Hungarian algorithm for matching. Team of 5.</p>
+          <div class="project-achievements">
+            <span class="achievement">🎯 99.34% Search Accuracy</span>
+            <span class="achievement">🏭 Manufacturing Industry</span>
+          </div>
+          <div class="project-tech">
+            <span>Image Embedding</span><span>Triton</span><span>Hungarian Algorithm</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-heading center reveal">Technical <span class="gradient-text">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card reveal" id="skill-lang">
+          <div class="skill-cat-icon">💻</div>
+          <h3>Languages</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <span>Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 97%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>C++</span>
+              <div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal" id="skill-ml">
+          <div class="skill-cat-icon">🧮</div>
+          <h3>AI / ML Frameworks</h3>
+          <div class="skill-pills">
+            <span>PyTorch</span><span>TensorFlow</span><span>HuggingFace</span>
+            <span>PaddlePaddle</span><span>TensorRT</span><span>Transformers</span>
+            <span>Unsloth</span><span>PEFT</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal" id="skill-cv">
+          <div class="skill-cat-icon">👁️</div>
+          <h3>Computer Vision</h3>
+          <div class="skill-pills">
+            <span>OpenCV</span><span>Pillow</span><span>NumPy</span>
+            <span>Qt Framework</span><span>DeepStream</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal" id="skill-serving">
+          <div class="skill-cat-icon">⚡</div>
+          <h3>AI Serving & MLOps</h3>
+          <div class="skill-pills">
+            <span>NVIDIA Triton</span><span>vLLM</span><span>SGLang</span>
+            <span>LitServe</span><span>TorchServe</span><span>MLflow</span>
+            <span>Ollama</span><span>llama.cpp</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal" id="skill-infra">
+          <div class="skill-cat-icon">🛠️</div>
+          <h3>Infrastructure & Data</h3>
+          <div class="skill-pills">
+            <span>Docker</span><span>MongoDB</span><span>Milvus</span>
+            <span>Qdrant</span><span>OpenSearch</span><span>DVC</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal" id="skill-domains">
+          <div class="skill-cat-icon">🎯</div>
+          <h3>AI Domains</h3>
+          <div class="skill-pills">
+            <span>Object Detection</span><span>Segmentation</span>
+            <span>OCR</span><span>Speech Recognition</span>
+            <span>LLM Fine-tuning</span><span>Image Generation</span>
+            <span>Depth Estimation</span><span>Pose Estimation</span>
+            <span>Robotics AI</span><span>Edge AI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PUBLICATIONS ========== -->
+  <section id="publications">
+    <div class="container">
+      <div class="section-label reveal">Research</div>
+      <h2 class="section-heading center reveal">Scientific <span class="gradient-text">Publications</span></h2>
+      <div class="pub-list">
+
+        <div class="pub-card glass-card reveal" id="pub-elde">
+          <div class="pub-badge">SCIE · Q2 Journal</div>
+          <h3>ELDE-Net: Efficient Light-weight Depth Estimation Network for Deep Reinforcement Learning-based Mobile Robot Path Planning</h3>
+          <p class="pub-authors">Đặng Thái Việt, <strong>Ben Wei Lim</strong>, Bùi Như Nghĩa, Phan Xuân Tân</p>
+          <div class="pub-footer">
+            <span class="pub-date">📅 August 2025</span>
+          </div>
+        </div>
+
+        <div class="pub-card glass-card reveal" id="pub-irdc">
+          <div class="pub-badge">Peer Reviewed · MDPI Sensors</div>
+          <h3>IRDC-Net: Intelligent Robot Depth and Contour Network</h3>
+          <p class="pub-authors">Đặng Thái Việt, <strong>Ben Wei Lim</strong>, Phan Xuân Tân</p>
+          <div class="pub-footer">
+            <span class="pub-date">📅 December 2022</span>
+            <a href="https://doi.org/10.3390/s23156907" target="_blank" rel="noopener" class="pub-doi">DOI: 10.3390/s23156907 ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="section-heading center reveal">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="contact-sub reveal">Open to strategic advisory roles, research collaborations, and technology leadership opportunities.</p>
+      <div class="contact-grid reveal">
+        <a href="mailto:cuong.tdm2000@gmail.com" id="contact-email" class="contact-card glass-card">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">cuong.tdm2000@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/cuontran2000" target="_blank" rel="noopener" id="contact-linkedin" class="contact-card glass-card">
+          <div class="contact-icon">💼</div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/cuontran2000</span>
+          </div>
+        </a>
+        <a href="tel:+84356780137" id="contact-phone" class="contact-card glass-card">
+          <div class="contact-icon">📱</div>
+          <div class="contact-info">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+84 356 780 137</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-brand">Ben Wei Lim</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-role">CTO · AI Architect</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-copy">© 2025</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
