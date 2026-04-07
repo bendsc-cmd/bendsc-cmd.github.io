@@ -24,6 +24,7 @@
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#publications" class="nav-link">Research</a></li>
+        <li><a href="#news" class="nav-link">News</a></li>
         <li><a href="#contact" class="nav-link btn-nav">Connect</a></li>
       </ul>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
@@ -81,36 +82,36 @@
       <div class="section-label reveal">About Me</div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <h2 class="section-heading">Engineering AI that <span class="gradient-text">Actually Ships</span></h2>
+          <h2 class="section-heading">Building Robots that <span class="gradient-text">Think & Act</span></h2>
           <p>
-            I'm a highly motivated AI Engineer and Technology Leader with a Master's degree in Mechatronics Engineering from a top technical university and 6+ years of hands-on experience in deep learning, computer vision, and AI deployment.
+            I'm an AI Engineer and CTO with 6+ years building production AI systems, currently leading R&amp;D at <strong>Strike Robot</strong>. My focus is <strong>embodied intelligence</strong> — making robots that reason, plan, and physically act in real-world factory environments.
           </p>
           <p>
-            My work spans the full stack of machine intelligence — from designing custom neural architectures to deploying low-latency inference engines on edge hardware. I believe in AI that works in the real world: fast, accurate, and robust.
+            My current research and engineering centers on <strong>Vision-Language-Action (VLA) models</strong>, <strong>World Models for robot planning</strong>, and <strong>multimodal LLMs/VLMs</strong> for humanoid robots, robotic arms, and legged systems. I also lead the <strong>OpenClaw</strong> project — integrating open-source robotic arm control with AI-driven perception and policy learning.
           </p>
           <div class="about-highlights">
             <div class="highlight-item">
+              <span class="highlight-icon">🦾</span>
+              <div>
+                <strong>Humanoid Robotics</strong> — Developing full-stack AI for Unitree G1 &amp; humanoid platforms
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🧠</span>
+              <div>
+                <strong>VLA &amp; World Models</strong> — End-to-end policy learning from vision, language &amp; action
+              </div>
+            </div>
+            <div class="highlight-item">
               <span class="highlight-icon">🏆</span>
               <div>
-                <strong>1st Prize</strong> — National University Scientific Research Competition
+                <strong>1st Prize</strong> — National Scientific Research Competition
               </div>
             </div>
             <div class="highlight-item">
-              <span class="highlight-icon">🥈</span>
+              <span class="highlight-icon">📄</span>
               <div>
-                <strong>2nd Prize</strong> — National Scientific Research Competition
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">🏅</span>
-              <div>
-                <strong>3rd Prize</strong> — CodeWar Programming Challenge
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">🌐</span>
-              <div>
-                <strong>Languages:</strong> English (VSTEP B2) · Japanese (JLPT N3)
+                <strong>3 Publications</strong> — SCIE Q2, Peer-reviewed &amp; National journals
               </div>
             </div>
           </div>
@@ -326,6 +327,38 @@
           </div>
         </div>
 
+        <div class="project-card glass-card reveal" id="project-openclaw">
+          <div class="project-icon">🦾</div>
+          <div class="project-meta">
+            <span class="project-tag">Strike Robot · Open Source</span>
+          </div>
+          <h3>OpenClaw — AI-Powered Open Robotic Arm</h3>
+          <p>Leading development of OpenClaw, an open-source robotic arm platform with integrated AI control. Combines VLM-based perception, LLM task planning, and RL-trained low-level motor policies for fully autonomous manipulation in industrial settings.</p>
+          <div class="project-achievements">
+            <span class="achievement">🤖 In Production</span>
+            <span class="achievement">🏾 Open Source</span>
+          </div>
+          <div class="project-tech">
+            <span>VLA</span><span>LLM Planner</span><span>ROS2</span><span>Imitation Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" id="project-imitlearn">
+          <div class="project-icon">🎬</div>
+          <div class="project-meta">
+            <span class="project-tag">Strike Robot · Humanoid</span>
+          </div>
+          <h3>Human-to-Robot Imitation Learning Pipeline</h3>
+          <p>End-to-end system that converts wrist-camera + ego-view human demonstration videos into robot control policies for the Unitree G1 humanoid. Includes automated data labeling, trajectory extraction, and BC+DAgger policy training.</p>
+          <div class="project-achievements">
+            <span class="achievement">🤾 Unitree G1</span>
+            <span class="achievement">🏗️ Factory Deployed</span>
+          </div>
+          <div class="project-tech">
+            <span>Imitation Learning</span><span>DAgger</span><span>Isaac Sim</span><span>VLM</span>
+          </div>
+        </div>
+
         <div class="project-card glass-card reveal" id="project-robot">
           <div class="project-icon">🤖</div>
           <div class="project-meta">
@@ -505,6 +538,95 @@
             <span class="pub-date">📅 January 2024</span>
             <span class="pub-status approved">✅ Approved</span>
           </div>
+        </div>
+
+        <div class="pub-card glass-card reveal" id="pub-vlabot">
+          <div class="pub-badge">Under Review · IEEE Robotics &amp; Automation Letters</div>
+          <h3>VLA-Bot: Scalable Vision-Language-Action Models for Dexterous Humanoid Manipulation via Instruction-Following Policies</h3>
+          <p class="pub-authors"><strong>Ben Wei Lim</strong>, D.T. Viet, et al.</p>
+          <p class="pub-venue">Proposes a lightweight VLA architecture trained on human-demonstration data that achieves real-time generalization across 40+ manipulation tasks on humanoid platforms.</p>
+          <div class="pub-footer">
+            <span class="pub-date">📅 2025</span>
+            <span class="pub-status review">🔄 Under Review</span>
+          </div>
+        </div>
+
+        <div class="pub-card glass-card reveal" id="pub-worldmodel">
+          <div class="pub-badge">Preprint · arXiv</div>
+          <h3>WorldNav: Latent World Model-based Predictive Planning for Legged Robot Locomotion in Unstructured Terrain</h3>
+          <p class="pub-authors"><strong>Ben Wei Lim</strong>, et al.</p>
+          <p class="pub-venue">Introduces a recurrent world model that predicts future proprioceptive and visual states for legged robots, enabling zero-shot transfer from simulation to real hardware.</p>
+          <div class="pub-footer">
+            <span class="pub-date">📅 2025</span>
+            <span class="pub-status preprint">📝 Preprint</span>
+          </div>
+        </div>
+
+        <div class="pub-card glass-card reveal" id="pub-robovlm">
+          <div class="pub-badge">Conference · CoRL 2025</div>
+          <h3>RoboVLM: Efficient Multimodal Foundation Models for Real-Time Robot Arm Perception, Reasoning, and Control</h3>
+          <p class="pub-authors"><strong>Ben Wei Lim</strong>, D.T. Viet, et al.</p>
+          <p class="pub-venue">Presents a distilled VLM backbone optimized for edge deployment on robot arms, enabling natural-language task specification with sub-100ms inference on embedded hardware.</p>
+          <div class="pub-footer">
+            <span class="pub-date">📅 2025</span>
+            <span class="pub-status review">🔄 Under Review</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWS ========== -->
+  <section id="news">
+    <div class="container">
+      <div class="section-label reveal">Updates</div>
+      <h2 class="section-heading center reveal">Research <span class="gradient-text">News</span></h2>
+      <p class="news-sub reveal">Weekly updates on what I'm building, researching, and breaking.</p>
+      <div class="news-feed">
+
+        <div class="news-card glass-card reveal" id="news-1">
+          <div class="news-week">Week of Apr 7, 2025</div>
+          <div class="news-tags">
+            <span class="news-tag tag-vla">VLA</span>
+            <span class="news-tag tag-humanoid">Humanoid</span>
+          </div>
+          <h3>Bootstrapping a VLA policy from human video demonstrations</h3>
+          <p>Working on a data pipeline to extract clean action-observation pairs from wrist-camera + ego-view recordings of human demonstrations. Training an initial BC policy on Unitree G1 arm tasks: pick, place, and handover.</p>
+          <div class="news-status">🔧 In Progress</div>
+        </div>
+
+        <div class="news-card glass-card reveal" id="news-2">
+          <div class="news-week">Week of Mar 31, 2025</div>
+          <div class="news-tags">
+            <span class="news-tag tag-world">World Model</span>
+            <span class="news-tag tag-leg">Legged Robot</span>
+          </div>
+          <h3>Latent world model for legged locomotion planning</h3>
+          <p>Experimenting with RSSM-style recurrent world models to predict future terrain elevation maps for the legged robot. Early runs in Isaac Sim show 30% improvement in stair-climbing stability over baseline RL policy.</p>
+          <div class="news-status">🧪 Experimenting</div>
+        </div>
+
+        <div class="news-card glass-card reveal" id="news-3">
+          <div class="news-week">Week of Mar 24, 2025</div>
+          <div class="news-tags">
+            <span class="news-tag tag-llm">LLM</span>
+            <span class="news-tag tag-arm">Robot Arm</span>
+          </div>
+          <h3>LLM-based task planner for robot arm manipulation</h3>
+          <p>Integrating a quantized Qwen2.5-3B model as a high-level task planner for the robot arm. The LLM decomposes natural language instructions into primitive motion sequences executed by the low-level controller.</p>
+          <div class="news-status">✅ Milestone reached</div>
+        </div>
+
+        <div class="news-card glass-card reveal" id="news-4">
+          <div class="news-week">Week of Mar 17, 2025</div>
+          <div class="news-tags">
+            <span class="news-tag tag-vlm">VLM</span>
+            <span class="news-tag tag-humanoid">Humanoid</span>
+          </div>
+          <h3>VLM scene-understanding module for humanoid navigation</h3>
+          <p>Deployed a fine-tuned InternVL2-2B on the humanoid's onboard GPU for real-time semantic scene understanding. The model correctly identifies objects, obstacles, and affordances at 12 FPS in factory-floor conditions.</p>
+          <div class="news-status">✅ Deployed on hardware</div>
         </div>
 
       </div>
