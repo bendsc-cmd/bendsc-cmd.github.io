@@ -7,7 +7,7 @@
   <meta name="description" content="Ben Wei Lim — Chief Technology Officer, AI Architect, and Robotics Researcher specializing in deep learning, computer vision, and intelligent systems." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,11 +19,7 @@
         <span class="brand-dot"></span>BWL
       </a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#publications" class="nav-link">Research</a></li>
         <li><a href="#news" class="nav-link">News</a></li>
         <li><a href="#contact" class="nav-link btn-nav">Connect</a></li>
       </ul>
@@ -35,356 +31,21 @@
 
   <!-- ========== HERO ========== -->
   <header id="hero">
-    <canvas id="particle-canvas"></canvas>
     <div class="hero-content reveal">
-      <div class="hero-badge">
-        <span class="badge-dot pulse"></span> Available for Strategic Consulting
+      <div class="hero-status">
+        <span class="status-dot"></span> Available for Strategic Consulting
       </div>
       <h1 class="hero-name">Ben Wei Lim</h1>
-      <div class="hero-title-wrap">
-        <span class="hero-title-prefix">Chief Technology Officer</span>
-        <span class="hero-title-divider">·</span>
-        <span class="hero-title-grad" id="typed-text"></span><span class="cursor-blink">|</span>
-      </div>
+      <p class="hero-role">Chief Technology Officer · AI Architect · Robotics Researcher</p>
       <p class="hero-desc">
-        Architecting next-generation AI systems at the intersection of deep learning, robotics, and production-scale deployment. 6+ years turning research into reality.
+        Architecting production AI systems at the intersection of deep learning, embodied robotics, and real-world deployment.
       </p>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num">6+</span>
-          <span class="stat-label">Years AI Experience</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">10+</span>
-          <span class="stat-label">AI Systems Shipped</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">3</span>
-          <span class="stat-label">Research Publications</span>
-        </div>
-      </div>
       <div class="hero-cta">
-        <a href="#projects" id="btn-explore" class="btn btn-primary">View Projects</a>
-        <a href="#contact" id="btn-contact" class="btn btn-ghost">Get in Touch</a>
+        <a href="#skills" id="btn-explore" class="btn btn-primary">View Work</a>
+        <a href="mailto:bendsc@dsc-labs.io" class="btn btn-ghost">bendsc@dsc-labs.io</a>
       </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-arrow"></div>
     </div>
   </header>
-
-  <!-- ========== ABOUT ========== -->
-  <section id="about">
-    <div class="container">
-      <div class="section-label reveal">About Me</div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <h2 class="section-heading">Building Robots that <span class="gradient-text">Think & Act</span></h2>
-          <p>
-            I'm an AI Engineer and CTO with 6+ years building production AI systems, currently leading R&amp;D at <strong>Strike Robot</strong>. My focus is <strong>embodied intelligence</strong> — making robots that reason, plan, and physically act in real-world factory environments.
-          </p>
-          <p>
-            My current research and engineering centers on <strong>Vision-Language-Action (VLA) models</strong>, <strong>World Models for robot planning</strong>, and <strong>multimodal LLMs/VLMs</strong> for humanoid robots, robotic arms, and legged systems.
-          </p>
-          <div class="about-highlights">
-            <div class="highlight-item">
-              <span class="highlight-icon"></span>
-              <div>
-                <strong>Humanoid Robotics</strong> — Developing full-stack AI for Unitree G1 &amp; humanoid platforms
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon"></span>
-              <div>
-                <strong>VLA &amp; World Models</strong> — End-to-end policy learning from vision, language &amp; action
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon"></span>
-              <div>
-                <strong>1st Prize</strong> — National Scientific Research Competition
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon"></span>
-              <div>
-                <strong>3 Publications</strong> — SCIE Q2, Peer-reviewed &amp; National journals
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-card-wrap reveal">
-          <div class="about-card glass-card">
-            <div class="about-avatar">
-              <div class="avatar-ring"></div>
-              <div class="avatar-inner">BWL</div>
-            </div>
-            <div class="about-card-info">
-              <h3>Ben Wei Lim</h3>
-              <span class="about-card-role">CTO · AI Architect · Researcher</span>
-            </div>
-            <div class="about-card-tags">
-              <span class="tag">Deep Learning</span>
-              <span class="tag">Computer Vision</span>
-              <span class="tag">Robotics AI</span>
-              <span class="tag">Edge Deployment</span>
-              <span class="tag">LLM Engineering</span>
-              <span class="tag">MLOps</span>
-            </div>
-            <div class="about-card-education">
-              <p class="edu-label">Education</p>
-              <p class="edu-item">🎓 M.Eng · Mechatronics Engineering</p>
-              <p class="edu-item">🎓 B.Eng · Mechatronics Engineering</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== EXPERIENCE ========== -->
-  <section id="experience">
-    <div class="container">
-      <div class="section-label reveal">Career Path</div>
-      <h2 class="section-heading center reveal">Professional <span class="gradient-text">Experience</span></h2>
-      <div class="timeline">
-
-        <div class="timeline-item reveal" data-year="2025–Present">
-          <div class="timeline-dot glow"></div>
-          <div class="timeline-content glass-card">
-            <div class="timeline-header">
-              <div>
-                <div class="company-logo-wrap">
-                  <img src="strike_robot_logo.png" alt="Strike Robot" class="company-logo" />
-                </div>
-                <h3>Chief Technology Officer</h3>
-                <span class="timeline-company">Strike Robot</span>
-              </div>
-              <span class="timeline-badge current">Current</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Leading strategic R&amp;D of Agentic AI systems for autonomous industrial humanoid robots</li>
-              <li>Architecting imitation learning pipelines converting human demonstration videos into robot control policies for Unitree G1</li>
-              <li>Managing cross-functional AI research team and executing product commercialization roadmap</li>
-              <li>Developing VLM-based scene understanding and object perception modules deployed on edge hardware</li>
-            </ul>
-            <div class="timeline-skills">
-              <span class="skill-chip">Agentic AI</span>
-              <span class="skill-chip">OpenClaw</span>
-              <span class="skill-chip">Imitation Learning</span>
-              <span class="skill-chip">VLA</span>
-              <span class="skill-chip">Team Leadership</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-year="2024–2025">
-          <div class="timeline-dot glow-secondary"></div>
-          <div class="timeline-content glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Robotics AI Research Collaborator</h3>
-                <span class="timeline-company">Global Robotics Research Institutes</span>
-              </div>
-              <span class="timeline-badge collab">Collaboration</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Collaborated with leading international robotics research organizations on embodied AI and legged locomotion systems</li>
-              <li>Joint research on Vision-Language-Action (VLA) models and World Model-based planning for robot arms and humanoids</li>
-              <li>Contributed to simulation benchmarks for humanoid and quadruped robot evaluation in unstructured environments</li>
-              <li>Co-authored papers on lightweight VLM architectures for real-time robot perception on edge hardware</li>
-            </ul>
-            <div class="timeline-skills">
-              <span class="skill-chip">VLA Models</span>
-              <span class="skill-chip">World Models</span>
-              <span class="skill-chip">Legged Robots</span>
-              <span class="skill-chip">Research</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-year="2022–2025">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Lead AI Engineer — Vision &amp; Document AI</h3>
-                <span class="timeline-company">Enterprise AI Company (Confidential)</span>
-              </div>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Designed and deployed FIDO-certified FaceID systems for major banking clients including <strong>Maybank</strong> and <strong>ShinHan Bank</strong></li>
-              <li>Built enterprise OCR and Key Information Extraction (KIE) pipelines achieving 97.6% accuracy for insurance and financial document processing</li>
-              <li>Delivered Mechanical Drawing Search system (99.34% accuracy) for manufacturing industry clients</li>
-              <li>Led a team of 5 from model research through production deployment via NVIDIA Triton &amp; TorchServe</li>
-            </ul>
-            <div class="timeline-skills">
-              <span class="skill-chip">Computer Vision</span>
-              <span class="skill-chip">Biometrics</span>
-              <span class="skill-chip">Banking AI</span>
-              <span class="skill-chip">MLOps</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-year="2021–2023">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3>Senior AI Engineer — Speech &amp; NLP</h3>
-                <span class="timeline-company">Tech Unicorn (Confidential)</span>
-              </div>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Researched and developed lightweight ASR models achieving 5% WER on low-resource Vietnamese speech</li>
-              <li>Deployed production ASR pipeline on NVIDIA Jetson Orin for real-time edge inference</li>
-              <li>Designed Text Inverse Normalization and Punctuation Restoration post-processing modules</li>
-              <li>Built end-to-end LLM pipeline: custom tokenizer, SFT and RLHF alignment, served via vLLM</li>
-            </ul>
-            <div class="timeline-skills">
-              <span class="skill-chip">ASR</span>
-              <span class="skill-chip">LLM</span>
-              <span class="skill-chip">Edge AI</span>
-              <span class="skill-chip">NLP</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal" data-year="2019–2021">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass-card">
-            <div class="timeline-header">
-              <div>
-                <h3>AI Engineer — Computer Vision &amp; Robotics</h3>
-                <span class="timeline-company">AI Research &amp; Systems Institute</span>
-              </div>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Built Kanji OCR deployed on iOS &amp; Android: 99.37% accuracy, ~10ms inference via aggressive quantization</li>
-              <li>Developed license plate recognition deployed on national highway infrastructure (~95% accuracy, &lt;100ms)</li>
-              <li>Participated in large-scale surveillance and vehicle detection systems using DeepStream and TensorRT</li>
-              <li>Established foundation in model optimization, AI serving platforms, and edge deployment</li>
-            </ul>
-            <div class="timeline-skills">
-              <span class="skill-chip">TensorRT</span>
-              <span class="skill-chip">Triton</span>
-              <span class="skill-chip">DeepStream</span>
-              <span class="skill-chip">Edge AI</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== PROJECTS ========== -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-label reveal">Portfolio</div>
-      <h2 class="section-heading center reveal">Key <span class="gradient-text">Projects</span></h2>
-      <div class="projects-grid">
-
-        <div class="project-card glass-card reveal" id="project-faceid">
-          <div class="project-icon"></div>
-          <div class="project-meta">
-            <span class="project-tag">Computer Vision · Biometrics</span>
-          </div>
-          <h3>FaceID Cloud & Mobile (FIDO Certified)</h3>
-          <p>Developed enterprise-grade FaceID system for cloud and mobile. Achieved FIDO certification. Deployed for major banking and fintech clients.</p>
-          <div class="project-achievements">
-            <span class="achievement">FIDO Certified</span>
-            <span class="achievement">Banking Clients</span>
-          </div>
-          <div class="project-tech">
-            <span>Deep Metric Learning</span><span>Quantization</span><span>Mobile AI</span>
-          </div>
-        </div>
-        <div class="project-card glass-card reveal" id="project-kanji">
-          <div class="project-icon"></div>
-          <div class="project-meta">
-            <span class="project-tag">Mobile AI · Edge</span>
-          </div>
-          <h3>Kanji OCR — Mobile (99.37% Acc, ~10ms)</h3>
-          <p>Lightweight Kanji OCR model deployed on iOS and Android with aggressive quantization achieving 99.37% accuracy and ~10ms inference time.</p>
-          <div class="project-achievements">
-            <span class="achievement">~10ms inference</span>
-            <span class="achievement">iOS &amp; Android</span>
-          </div>
-          <div class="project-tech">
-            <span>CNN</span><span>Quantization</span><span>Torch Edge</span>
-          </div>
-        </div>
-        <div class="project-card glass-card reveal" id="project-imitlearn">
-          <div class="project-icon"></div>
-          <div class="project-meta">
-            <span class="project-tag">Strike Robot · Humanoid</span>
-          </div>
-          <h3>Human-to-Robot Imitation Learning Pipeline</h3>
-          <p>End-to-end system that converts wrist-camera + ego-view human demonstration videos into robot control policies for the Unitree G1 humanoid. Includes automated data labeling, trajectory extraction, and BC+DAgger policy training.</p>
-          <div class="project-achievements">
-            <span class="achievement">Unitree G1</span>
-            <span class="achievement">Factory Deployed</span>
-          </div>
-          <div class="project-tech">
-            <span>Imitation Learning</span><span>DAgger</span><span>Isaac Sim</span><span>VLM</span>
-          </div>
-        </div>
-
-        <div class="project-card glass-card reveal" id="project-robot">
-          <div class="project-icon"></div>
-          <div class="project-meta">
-            <span class="project-tag">Robotics · Agentic AI</span>
-          </div>
-          <h3>Agentic AI — Humanoid Robot Control</h3>
-          <p>Planning and engineering an Agentic AI system for the G1 Unitree humanoid robot. Includes human-to-robot action conversion from video and full factory integration.</p>
-          <div class="project-achievements">
-            <span class="achievement">Unitree G1</span>
-            <span class="achievement">Factory Ready</span>
-          </div>
-          <div class="project-tech">
-            <span>Imitation Learning</span><span>VLM</span><span>RL</span>
-          </div>
-        </div>
-        <div class="project-card glass-card reveal" id="project-kie">
-          <div class="project-icon"></div>
-          <div class="project-meta">
-            <span class="project-tag">Document AI · NLP</span>
-          </div>
-          <h3>Key Information Extraction (97.6% Acc)</h3>
-          <p>AI system for extracting structured data from insurance documents, invoices, and forms. Customized LayoutLMv3 served via Triton inference server.</p>
-          <div class="project-achievements">
-            <span class="achievement">97.6% Accuracy</span>
-            <span class="achievement">Insurance &amp; Finance</span>
-          </div>
-          <div class="project-tech">
-            <span>LayoutLMv3</span><span>Transformers</span><span>Triton</span>
-          </div>
-        </div>
-
-        <div class="project-card glass-card reveal" id="project-drawing">
-          <div class="project-icon"></div>
-          <div class="project-meta">
-            <span class="project-tag">Industrial AI · Search</span>
-          </div>
-          <h3>Mechanical Drawing Search (99.34% Acc)</h3>
-          <p>AI-powered visual search system for mechanical drawings using image embeddings and the Hungarian algorithm for matching. Team of 5.</p>
-          <div class="project-achievements">
-            <span class="achievement">99.34% Search Accuracy</span>
-            <span class="achievement">Manufacturing Industry</span>
-          </div>
-          <div class="project-tech">
-            <span>Image Embedding</span><span>Triton</span><span>Hungarian Algorithm</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <!-- ========== TECHNOLOGY FOCUS ========== -->
   <section id="skills">
@@ -452,81 +113,7 @@
     </div>
   </section>
 
-    <!-- ========== PUBLICATIONS ========== -->
-  <section id="publications">
-    <div class="container">
-      <div class="section-label reveal">Research</div>
-      <h2 class="section-heading center reveal">Scientific <span class="gradient-text">Publications</span></h2>
-      <div class="pub-list">
-
-        <div class="pub-card glass-card reveal" id="pub-elde">
-          <div class="pub-badge">SCIE · Q2 Journal</div>
-          <h3>ELDE-Net: Efficient Light-weight Depth Estimation Network for Deep Reinforcement Learning-based Mobile Robot Path Planning</h3>
-          <p class="pub-authors">D.T. Viet, <strong>Ben Wei Lim</strong>, B.N. Nghia, P.X. Tan</p>
-          <div class="pub-footer">
-            <span class="pub-date">August 2025</span>
-          </div>
-        </div>
-
-        <div class="pub-card glass-card reveal" id="pub-irdc">
-          <div class="pub-badge">Peer Reviewed · MDPI Sensors</div>
-          <h3>IRDC-Net: Intelligent Robot Depth and Contour Network</h3>
-          <p class="pub-authors">D.T. Viet, <strong>Ben Wei Lim</strong>, P.X. Tan</p>
-          <div class="pub-footer">
-            <span class="pub-date">December 2022</span>
-            <a href="https://doi.org/10.3390/s23156907" target="_blank" rel="noopener" class="pub-doi">DOI: 10.3390/s23156907 ↗</a>
-          </div>
-        </div>
-
-        <div class="pub-card glass-card reveal" id="pub-semantic-seg">
-          <div class="pub-badge">National Journal · Engineering &amp; Technology</div>
-          <h3>Semantic Segmentation Model for Efficient Mobile Robot Navigation with Resource-Optimized Architecture</h3>
-          <p class="pub-authors"><strong>Ben Wei Lim</strong>, D.T. Viet</p>
-          <p class="pub-venue">Journal of Science and Technology — Vietnamese National Council of Professorship (Peer-reviewed National Academic Journal)</p>
-          <div class="pub-footer">
-            <span class="pub-date">January 2024</span>
-            <span class="pub-status approved">Approved</span>
-          </div>
-        </div>
-
-        <div class="pub-card glass-card reveal" id="pub-vlabot">
-          <div class="pub-badge">Under Review · IEEE Robotics &amp; Automation Letters</div>
-          <h3>VLA-Bot: Scalable Vision-Language-Action Models for Dexterous Humanoid Manipulation via Instruction-Following Policies</h3>
-          <p class="pub-authors"><strong>Ben Wei Lim</strong>, D.T. Viet, et al.</p>
-          <p class="pub-venue">Proposes a lightweight VLA architecture trained on human-demonstration data that achieves real-time generalization across 40+ manipulation tasks on humanoid platforms.</p>
-          <div class="pub-footer">
-            <span class="pub-date">2025</span>
-            <span class="pub-status review">Under Review</span>
-          </div>
-        </div>
-
-        <div class="pub-card glass-card reveal" id="pub-worldmodel">
-          <div class="pub-badge">Preprint · arXiv</div>
-          <h3>WorldNav: Latent World Model-based Predictive Planning for Legged Robot Locomotion in Unstructured Terrain</h3>
-          <p class="pub-authors"><strong>Ben Wei Lim</strong>, et al.</p>
-          <p class="pub-venue">Introduces a recurrent world model that predicts future proprioceptive and visual states for legged robots, enabling zero-shot transfer from simulation to real hardware.</p>
-          <div class="pub-footer">
-            <span class="pub-date">2025</span>
-            <span class="pub-status preprint">Preprint</span>
-          </div>
-        </div>
-
-        <div class="pub-card glass-card reveal" id="pub-robovlm">
-          <div class="pub-badge">Conference · CoRL 2025</div>
-          <h3>RoboVLM: Efficient Multimodal Foundation Models for Real-Time Robot Arm Perception, Reasoning, and Control</h3>
-          <p class="pub-authors"><strong>Ben Wei Lim</strong>, D.T. Viet, et al.</p>
-          <p class="pub-venue">Presents a distilled VLM backbone optimized for edge deployment on robot arms, enabling natural-language task specification with sub-100ms inference on embedded hardware.</p>
-          <div class="pub-footer">
-            <span class="pub-date">2025</span>
-            <span class="pub-status review">Under Review</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== NEWS ========== -->
+    <!-- ========== NEWS ========== -->
   <section id="news">
     <div class="container">
       <div class="section-label reveal">Updates</div>
@@ -582,33 +169,6 @@
     </div>
   </section>
 
-  
-  <!-- ========== PARTNERS ========== -->
-  <section id="partners">
-    <div class="container">
-      <div class="section-label reveal">Collaborations</div>
-      <h2 class="section-heading center reveal">Trusted <span class="gradient-text">Partners</span></h2>
-      <p class="focus-intro reveal">Organizations I have collaborated with on cutting-edge AI and Robotics solutions.</p>
-      <div class="partners-grid reveal">
-        <div class="partner-card glass-card">
-          <div class="partner-logo-wrap"><img src="Maybank-Logo.png" alt="Maybank" class="partner-logo" /></div>
-          <h3>Maybank</h3>
-          <p>Deployment of FIDO-certified FaceID systems</p>
-        </div>
-        <div class="partner-card glass-card">
-          <div class="partner-logo-wrap"><img src="Shinhan_Bank_Logo_(ENG).svg.png" alt="ShinHan Bank" class="partner-logo" /></div>
-          <h3>ShinHan Bank</h3>
-          <p>Enterprise OCR &amp; Document AI solutions</p>
-        </div>
-        <div class="partner-card glass-card">
-          <div class="partner-logo-wrap"><img src="toyota3.png" alt="Toyota Research Institute" class="partner-logo" /></div>
-          <h3>Toyota Research Institute</h3>
-          <p>Joint research on Embodied AI &amp; Legged Locomotion</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ========== CONTACT ========== -->
   <section id="contact">
     <div class="container">
@@ -617,24 +177,9 @@
       <p class="contact-sub reveal">Open to strategic advisory roles, research collaborations, and technology leadership opportunities.</p>
       <div class="contact-grid reveal">
         <a href="mailto:bendsc@dsc-labs.io" id="contact-email" class="contact-card glass-card">
-          <div class="contact-icon"></div>
           <div class="contact-info">
             <span class="contact-label">Email</span>
             <span class="contact-value">bendsc@dsc-labs.io</span>
-          </div>
-        </a>
-        <a href="https://t.me/BENJR2209" target="_blank" rel="noopener" id="contact-telegram" class="contact-card glass-card">
-          <div class="contact-icon"></div>
-          <div class="contact-info">
-            <span class="contact-label">Telegram</span>
-            <span class="contact-value">@BENJR2209</span>
-          </div>
-        </a>
-        <a href="https://strikerobot.ai/" target="_blank" rel="noopener" id="contact-website" class="contact-card glass-card">
-          <div class="contact-icon"></div>
-          <div class="contact-info">
-            <span class="contact-label">Company</span>
-            <span class="contact-value">strikerobot.ai</span>
           </div>
         </a>
       </div>
